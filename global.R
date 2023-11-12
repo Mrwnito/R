@@ -12,7 +12,7 @@ library(readr)
 library(htmlwidgets)
 library(corrplot)
 
-base_path <- 'D:/DataVisu/6.10/'
+base_path <- 'cheminverslerepertoire/R/Données'
 years <- 2008:2021
 file_names <- paste0("interventions", years, "V3.xlsx")
 full_paths <- paste0(base_path, file_names)
