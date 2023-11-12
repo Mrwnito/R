@@ -3,6 +3,7 @@
 Ce projet est un tableau de bord interactif en R qui visualise les données d'interventions. Il est structuré en trois fichiers principaux de script R (global.R, ui.R, server.R) et utilise un dossier de données (les interventions des sapeurs pompiers en france de 2008 a 2021) ayant été traité via python pour harmoniser les colonnes, enlever les valeurs manquantes, etc.
 
 **Structure du Projet**
+
 global.R : Contient les bibliothèques nécessaires et la préparation des données.
 ui.R : Gère l'interface utilisateur du tableau de bord.
 server.R : Contient la logique du serveur pour les réactivités et les visualisations.
@@ -11,14 +12,14 @@ Données/ : Dossier contenant les données des interventions.
 Prérequis
 Pour exécuter ce projet, vous devez avoir R et les bibliothèques suivantes installées :
 
-library(dplyr) # équivalent de pandas
-library(ggplot2) # équivalent de matplotlib et seaborn
-library(leaflet) # équivalent de folium
-library(sf) # équivalent de geopandas
-library(shiny) # équivalent de dash
+library(dplyr)
+library(ggplot2)
+library(leaflet)
+library(sf)
+library(shiny)
 library(shinydashboard)
-library(plotly) # pour utiliser Plotly avec Shiny
-library(bslib) # pour utiliser des composants bootstrap avec Shiny
+library(plotly)
+library(bslib)
 library(purrr)
 library(readxl)
 library(readr)
@@ -33,6 +34,10 @@ Ouvrez RStudio ou un autre environnement de développement R.
 Définissez le répertoire de travail à la racine du projet.
 
 'setwd("chemin/vers/le/dossier/du/projet")'
+
+Puis changer base_path avec votre chemin jusqu'au fichier Données
+
+base_path <- r"(cheminvers\R\Données\)"
 
 Exécutez global.R pour charger les bibliothèques et préparer les données.
 
