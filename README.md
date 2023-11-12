@@ -46,6 +46,7 @@ Exécutez global.R pour charger les bibliothèques et préparer les données.
 Lancez l'application Shiny en exécutant ui.R et runApp('server.R.')
 
 'source('ui.R')'
+
 'runApp('server.R.')'
 
 Le tableau de bord devrait maintenant s'ouvrir dans une nouvelle fenêtre de navigateur ou dans l'interface utilisateur de RStudio.
