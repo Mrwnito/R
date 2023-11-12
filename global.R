@@ -14,7 +14,7 @@ library(htmlwidgets) # Permet d'intégrer des widgets HTML avec R
 library(corrplot) # Utilisé pour visualiser des matrices de corrélations
 
 # Chemin de base vers le dossier contenant les données
-base_path <- 'cheminverslerepertoire/R/Données'
+base_path <- r"(cheminvers\R\Données\)"
 # Création d'une séquence d'années
 years <- 2008:2021
 # Génération des noms de fichiers pour chaque année
